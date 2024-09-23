@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
+
+
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = 'tiktok-pixel-experiment';  // Replace with your GitHub repo name
+
 const nextConfig = {
     output: 'export', // Ensures the app is exported as a static site
     reactStrictMode: true,
-    basePath: '/tiktok-pixel-experiment', // Replace 'repository-name' with your GitHub repository name
+    assetPrefix: isProd ? `/${repoName}/` : '',
+    basePath: isProd ? `/${repoName}` : '',
+    
     images: {
       unoptimized: true, // GitHub Pages does not support Next.js Image Optimization, so disable it
     },
