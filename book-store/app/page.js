@@ -70,7 +70,7 @@ export default function Home() {
 
   return (
     <div className="p-6">
-      <h1 className="text-4xl font-bold mb-6">George's History & Humanity Bookstore</h1>
+      <h1 className="text-4xl font-bold mb-6">George's Bookstore</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
         {books.map((book) => (
           <div key={book.id} className="border p-4 rounded-lg shadow-md flex flex-col justify-between h-full">
