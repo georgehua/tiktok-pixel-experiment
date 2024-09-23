@@ -5,11 +5,7 @@ import Snackbar from '../components/Snackbar'; // Import the Snackbar component
 import Link from 'next/link';
 import { useState } from 'react';
 
-// const books = [
-//   { id: 1, title: 'History of the World', description: 'A brief history...', price: 20, image: '/book1.jpg' },
-//   { id: 2, title: 'The Age of Humanity', description: 'Exploring humanity...', price: 25, image: '/book2.jpg' },
-//   // Add more books as needed
-// ];
+
 const books = [
   {
     id: 1,
